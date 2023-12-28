@@ -47,8 +47,8 @@
 ## Certifications
 
 - HashiCorp Certified: Terraform Associate in 2023
-- Certified Kubernetes Administrator (CKA) in 2021
-- Certified Kubernetes Application Developer (CKAD) in 2021
+- The Linux Foundation Certified Kubernetes Administrator (CKA) in 2021
+- The Linux Foundation Certified Kubernetes Application Developer (CKAD) in 2021
 - Oracle Certified Foundations Associate - Cloud Infrastructure in 2022
 - EDB Certified Professional - PostgreSQL 12 in 2020
 - EDB Certified Associate - PostgreSQL 12 in 2020
@@ -60,9 +60,10 @@
 
 ## Blog Posts
 
-- Solving AWS Aurora RDS load balancing problem with pgPool-II
-- Small contribution to open-source community on Terraform AWS RDS Cluster ü PostgreSQL Architecture
-- Install and configure pgBadger for PostgreSQL on Linux
+- [Solving AWS Aurora RDS load balancing problem with pgPool-II](https://medium.com/talabat-tech/solving-aws-aurora-rds-load-balancing-problem-with-pgpool-ii-d54897c95176)
+- [Small contribution to open-source community on Terraform AWS RDS Cluster](https://github.com/cloudposse/terraform-aws-rds-cluster/pull/67)
+- [PostgreSQL Architecture](https://www.linkedin.com/pulse/postgresql-architecture-sumeet-shukla-1/)
+- [Install and configure pgBadger for PostgreSQL on Linux](https://medium.com/@sumeet.k.shukla/install-and-configure-pgbadger-for-postgresql-on-centos-2dfd01346896)
 
 ## Achievements
 
@@ -75,6 +76,8 @@
 - Secured 15th Position in NTSE State Level Examination.
 - Secured 5th Position in JEE for Diploma in State.
 - Won prizes in Science Seminars, Quiz Competitions & Chess Tournaments.
+
+## Projects
 
 ### Project # 7 - Site Reliability Engineering - From Mar 2019 to Feb 2022
 
