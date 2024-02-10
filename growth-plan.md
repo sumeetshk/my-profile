@@ -51,32 +51,36 @@ I'm passionate about (motivation) and I value (value)
 
 ### Short Term Goals (2 months)
 
-- [ ] DBA Lead
-- [ ] DevOps Engineer
-- [ ] SRE
-- [ ] Cloud Architect
-- [ ] DBRE
+- [ ] Lead Database Administrator (DBA)
+- [ ] Database Reliabilty Engineer (DBRE)
+- [ ] Cloud Support Engineer
 
 ### Long Term Goals
 
 - [ ] Cloud Security Architect
 - [ ] DBA Manager
 - [ ] DevSecOps Engineer
+- [ ] Site Reliability Engineer (SRE)
+- [ ] Cloud Solutions Architect
 
 ## Toipcs to Cover
 
 - Database
   - [ ] PostgreSQL
+  - [ ] RDS/Aurora
   - [ ] MongoDB
+  - [ ] DynamoDB
   - [ ] MySQL
-  - [ ] SQL Server
   - [ ] Redshift
   - [ ] Redis
-  - [ ] RDS/Aurora
+  - [ ] ElasticSearch
+  - [ ] Neo4J
+  - [ ] Cassandra
+  - [ ] SQL Server
 - Cloud
   - [ ] AWS
-  - [ ] Azure
   - [ ] GCP
+  - [ ] Azure
   - [ ] Oracle
 - CI/CD
   - [ ] Jenkins
@@ -87,25 +91,32 @@ I'm passionate about (motivation) and I value (value)
 - Config Mgmt
   - [ ] Ansible
 - Networking & Storage
-  - TCP/IP
-  - NFS, SMB
+  - [ ] TCP/IP
+  - [ ] DNS
+  - [ ] HTTP
+  - [ ] Curl
+  - [ ] DHCP
+  - [ ] SSH/TelNet
+  - [ ] NFS, SMB
 - IaC
   - [ ] Terraform
   - [ ] Packer
 - K8S
-  - Docker
-  - Helm
-  - Kustomize
+  - [ ] Docker
+  - [ ] Helm
+  - [ ] Kustomize
 - Observability
-  - ELK Prometheus Grafana
-  - DataDog
-  - NewRelic
-  - Splunk
+  - [ ] ELK Prometheus Grafana
+  - [ ] Nagios
+  - [ ] NewRelic
+  - [ ] DataDog
+  - [ ] Splunk
 - SRE/Devops concepts
   - Message Queue Kafka SQS
-- Full Stack Development
-  - Python
-  - JavaScript
+- Scripting
+  - [ ] Bash
+  - [ ] Python
+  - [ ] JavaScript
 - DSA / System Design
 - Protocols
   - SAML
@@ -125,14 +136,17 @@ I'm passionate about (motivation) and I value (value)
 
 ## Certifications:
 
-- [ ] Azure Administrator Associate - AZ-104 (Feb)
+- [ ] 
 - [ ] AWS Advanced Networking Speciality (Feb)
+- [ ] AWS Security Speciality (Mar)
+- [ ] AWS Data Engineer (Apr)
+- [ ] Azure Administrator Associate - AZ-104 (Feb)
 - [ ] GCP Professional Cloud DevOps Engineer
 - [ ] Azure DevOps Engineer Expert - AZ-400
 - [ ] ITIL v4
 - [ ] Python
 - [x] NewRelic Observability Practitioner
-- [ ] AWS Data Engineer (Post March)
+- [ ] PCI DSS Certification (July)
 
 ## Coursera & edX
 
