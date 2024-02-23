@@ -10,7 +10,7 @@
 ## Professional Summary
 
 - 12 years of experience in database administration, site reliability engineering and web design & development. I design, configure and manage high volume databases with a focus on performance, security, scalability, reliability, high-availability, disaster-recovery and observability.
-- Dealingwithproductowners,understandingtheirrequirement,docapacity planning, provisioning & configuring the servers for optimal performance.
+- Dealing with product owners,understanding their requirement, do capacity planning, provisioning & configuring the servers for optimal performance.
 - Building and upgrading Infrastructure (IaC) on AWS using Terraform & Packer.
 - Automating various DB operations and Configuring DB CI/CD pipelines using FlywayDB, CircleCI, GitHub, Kubernetes, Helm Charts.
 - Helping the DevOps team to reduce Time to Release by automating and configuring pieces in CI/CD pipelines using CircleCI, AWS ECR, Docker, GitHub etc.

@@ -1,4 +1,4 @@
-- [💼 Preparation Plan #job](#-preparation-plan-job)
+- [💼 Preparation Plan](#-preparation-plan)
   - [Areas of Expertise](#areas-of-expertise)
   - [Career Identity](#career-identity)
     - [Strength: What skill, knowledge and talents set me apart?](#strength-what-skill-knowledge-and-talents-set-me-apart)
@@ -10,24 +10,28 @@
     - [Long Term Goals](#long-term-goals)
   - [Toipcs to Cover](#toipcs-to-cover)
   - [Sources](#sources)
-  - [Certifications:](#certifications)
+  - [Certifications](#certifications)
   - [Coursera \& edX](#coursera--edx)
   - [Security](#security)
   - [Schedule](#schedule)
-    - [Schedule (2 weeks - 5 Feb to 18 Feb)](#schedule-2-weeks---5-feb-to-18-feb)
-    - [Schedule (2 weeks - 19 Feb to 3 Mar)](#schedule-2-weeks---19-feb-to-3-mar)
+    - [05 Feb to 18 Feb - 2 weeks](#05-feb-to-18-feb---2-weeks)
+    - [19 Feb to 03 Mar - 2 weeks](#19-feb-to-03-mar---2-weeks)
+    - [04 Feb to 17 Mar - 2 weeks](#04-feb-to-17-mar---2-weeks)
 
-# 💼 Preparation Plan #job
+# 💼 Preparation Plan
 
 ## Areas of Expertise
 
-- Data Masking
-- Data Migration
-- DevOps
-- Database Administration
-- Site Reliabilty Engineering
-- Security
-- Cloud Solutions Architecture
+- [ ] Database Administration (PostgreSQL, MySQL, AWS RDS, MongoDB, Redshift, Redis)
+- [ ] Database Security (Masking, Encryption, Auditing)
+- [ ] Data Migration
+- [ ] Infrastructure as Code (Trraform, Packer)
+- [ ] Cloud Solutions Architecture (AWS)
+- [ ] Scripting (SQL, Shell Scripting, YAML, Python, jQuery, JSON, PHP)
+- [ ] Site Reliability Engineering (Kubernetes, Observability)
+- [ ] DevOps (CI/CD, GitHub Workflow/Actions, GitOps, CircleCI)
+- [ ] Agile Methodologies (Scrum)
+- [ ] Tools (pgAdmin, flywayDB, pgBench, pgPool, pgAudit, Foreign Data Wrappers(FDW), pgBadger, pgRepack, PEM, TOAD, PuTTY, VS Code, StatusPage, dBeaver, BOXI, Crystal Reports)
 
 ## Career Identity
 
@@ -128,20 +132,21 @@ I'm passionate about (motivation) and I value (value)
 
 - Educative
 - Udemy
+- Coursera
+- edX
 - KodeKloud
 - Freecodecamp
 - AcloudGuru
 - RealPython
 - ZTM
 
-## Certifications:
+## Certifications
 
-- [ ] 
 - [ ] AWS Advanced Networking Speciality (Feb)
 - [ ] AWS Security Speciality (Mar)
 - [ ] AWS Data Engineer (Apr)
-- [ ] Azure Administrator Associate - AZ-104 (Feb)
 - [ ] GCP Professional Cloud DevOps Engineer
+- [ ] Azure Administrator Associate - AZ-104 (Feb)
 - [ ] Azure DevOps Engineer Expert - AZ-400
 - [ ] ITIL v4
 - [ ] Python
@@ -175,17 +180,25 @@ I'm passionate about (motivation) and I value (value)
 
 ## Schedule
 
-### Schedule (2 weeks - 5 Feb to 18 Feb)
+### 05 Feb to 18 Feb - 2 weeks
 
-- [ ] Cloud (AWS N/W, Azure Admin (kodekloud))
-- [ ] Database, Storage, Security
+- [ ] Cloud (AWS N/W, AWS RDS)
+- [ ] Database (PostgreSQL), Storage, Security
+- [ ] Bash
+- [ ] K8S
+- [ ] Terraform
+
+### 19 Feb to 03 Mar - 2 weeks
+
+- [ ] AWS N/W
+- [ ] Google SRE
+- [ ] GCP Professional Cloud DevOps Engineer
 - [ ] Google Foundations of Project Management
 - [ ] Yale Negotiation
 - [ ] Python
-- [ ] K8S
 
-### Schedule (2 weeks - 19 Feb to 3 Mar)
+### 04 Feb to 17 Mar - 2 weeks
 
+- [ ] AWS Solutions Architect
+- [ ] Azure Admin
 - [ ] Azure DevOps
-- [ ] Google SRE
-- [ ] GCP Professional Cloud DevOps Engineer
