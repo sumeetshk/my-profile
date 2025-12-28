@@ -1,0 +1,379 @@
+\documentclass[10pt,a4paper]{article}
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND THEMES
+%----------------------------------------------------------------------------------------
+\usepackage[top=1.2cm, bottom=1.2cm, left=1.2cm, right=1.2cm]{geometry}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{fontawesome5} % For Icons
+\usepackage{tabularx}
+\usepackage{multicol}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage[default]{sourcesanspro} % Professional Sans-Serif Font
+\usepackage[T1]{fontenc}
+\usepackage{tikz}
+
+%----------------------------------------------------------------------------------------
+%	COLORS & STYLES
+%----------------------------------------------------------------------------------------
+\definecolor{primary}{RGB}{0, 79, 158} % Deep Professional Blue
+\definecolor{secondary}{RGB}{70, 70, 70} % Dark Gray
+\definecolor{accent}{RGB}{230, 240, 250} % Light Blue Background
+\definecolor{lightgray}{RGB}{240, 240, 240}
+
+% Custom Section Header
+\titleformat{\section}
+  {\Large\bfseries\color{primary}\uppercase}
+  {}{0em}
+  {}[\titlerule]
+
+\titlespacing{\section}{0pt}{10pt}{5pt}
+
+% Custom Subsection
+\titleformat{\subsection}
+  {\large\bfseries\color{secondary}}
+  {}{0em}
+  {}
+
+% Hyperlink setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=primary,
+    filecolor=primary,
+    urlcolor=primary,
+}
+
+%----------------------------------------------------------------------------------------
+%	BEGIN DOCUMENT
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	HEADER
+%----------------------------------------------------------------------------------------
+\begin{center}
+    \begin{tikzpicture}
+        \node[draw=primary, line width=1pt, rounded corners, fill=accent, inner sep=10pt, minimum width=0.95\textwidth] (box) {
+            \begin{minipage}{0.9\textwidth}
+                \begin{center}
+                    {\Huge \textbf{\color{primary} SUMEET KUKAR SHUKLA}} \\[5pt]
+                    {\Large \textbf{Senior Database Reliability Engineer \& Cloud Architect}} \\[8pt]
+                    
+                    % Badges
+                    \colorbox{primary}{\color{white}\textbf{\footnotesize \ \ AWS Certified Database Specialty \ \ }} \ 
+                    \colorbox{primary}{\color{white}\textbf{\footnotesize \ \ CKA \& CKAD Certified \ \ }} \ 
+                    \colorbox{primary}{\color{white}\textbf{\footnotesize \ \ Terraform Associate \ \ }} \\[8pt]
+
+                    % Contact Info
+                    \small
+                    \faEnvelope \ \href{mailto:sumeet.k.shukla@gmail.com}{sumeet.k.shukla@gmail.com} \quad | \quad
+                    \faPhone \ +91 74061 21115 \quad | \quad
+                    \faLinkedin \ \href{https://linkedin.com/in/sumeetshukla}{linkedin.com/in/sumeetshukla} \quad | \quad
+                    \faCertificate \ \href{https://www.credly.com/users/sumeet-shukla}{Credly Profile}
+                \end{center}
+            \end{minipage}
+        };
+    \end{tikzpicture}
+\end{center}
+
+\vspace{-10pt}
+
+%----------------------------------------------------------------------------------------
+%	PROFESSIONAL SUMMARY
+%----------------------------------------------------------------------------------------
+\section{Professional Summary}
+Senior Database Reliability Engineer with \textbf{12+ years of experience} across database administration, site reliability engineering, and cloud platform operations. Specialized in designing and operating high-scale, production-critical database platforms with a strong focus on performance, security, scalability, high availability, disaster recovery, and observability.
+\begin{itemize}[leftmargin=*, noitemsep, topsep=2pt]
+    \item Extensive experience with AWS cloud platforms, implementing Infrastructure as Code (IaC) using Terraform and Packer.
+    \item Proven track record of database automation and CI/CD enablement using Flyway, GitHub, CircleCI, Kubernetes, and Helm.
+    \item Hands-on expertise in PostgreSQL-centric platforms, including performance tuning, capacity planning, replication, connection pooling, and load balancing.
+    \item Led on-premise to cloud and cross-engine database migrations, ensuring stability, data integrity, and minimal downtime.
+    \item Recognized for automation, ownership, and continuous improvement, consistently delivering reliable and scalable database platforms.
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS SET (COMPACT)
+%----------------------------------------------------------------------------------------
+\section{Technical Skills}
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+    \textbf{\color{primary}Primary Expertise} & PostgreSQL (Primary), AWS RDS \& Aurora, DBRE, Performance Tuning, Query Optimization, HA \& DR, Replication, Capacity Planning, Backup \& Recovery, Security, Migrations. \\
+    \textbf{\color{primary}Cloud \& Platform} & AWS Cloud, IaC (Terraform, Packer), Kubernetes, Helm, Docker, AWS ECR, Platform Automation. \\
+    \textbf{\color{primary}Engineering} & CI/CD (GitHub Actions, CircleCI), SQL, Shell Scripting (Bash), Python, YAML, MySQL, MongoDB, Amazon Redshift. \\
+    \textbf{\color{primary}Observability} & Datadog, New Relic, Splunk, Nagios, SolarWinds, Honeycomb. \\
+    \textbf{\color{primary}Tools} & Flyway, pgAdmin, pgBadger, pgRepack, pgPool, pgAudit, pgBench, dBeaver, Jira, Confluence. \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE SUMMARY (COMPACT)
+%----------------------------------------------------------------------------------------
+\section{Experience Summary}
+
+\noindent
+\textbf{Senior Database Reliability Engineer} \hfill \textbf{Mar 2025 -- Present} \\
+\emph{Inspectorio Inc., India} \\
+Owning reliability, performance, and scalability of production PostgreSQL platforms across multi-cloud environments.
+
+\vspace{3pt}
+\noindent
+\textbf{Lead Database Reliability Engineer} \hfill \textbf{Feb 2024 -- Mar 2025} \\
+\emph{Hexaware Technologies, India} \\
+Led cloud database platform transitions, stabilization, and governance across AWS-based PostgreSQL and data ecosystems.
+
+\vspace{3pt}
+\noindent
+\textbf{Principal PostgreSQL DBRE (Independent Consulting)} \hfill \textbf{Mar 2022 -- Feb 2024} \\
+\emph{Independent Consulting, India} \\
+Delivered PostgreSQL platform architecture, migrations, performance engineering, and automation across multiple production clients.
+
+\vspace{3pt}
+\noindent
+\textbf{Senior Site Reliability Engineer (Database Platforms)} \hfill \textbf{Mar 2019 -- Feb 2022} \\
+\emph{Talabat (Delivery Hero Group), Dubai, UAE} \\
+Owned database reliability, HA/DR, performance, and automation for large-scale, consumer-facing platforms on AWS.
+
+\vspace{3pt}
+\noindent
+\textbf{Senior Database Administrator} \hfill \textbf{Apr 2017 -- Mar 2019} \\
+\emph{Optum (United Health Group), Chennai, India} \\
+Led multi-engine database operations and performance optimization for enterprise healthcare platforms.
+
+\vspace{3pt}
+\noindent
+\textbf{PostgreSQL Database Administrator} \hfill \textbf{Aug 2016 -- Apr 2017} \\
+\emph{Aricent Technologies (Cisco EMaaS), Bangalore, India} \\
+Supported Cisco's cloud-based EMaaS platform with PostgreSQL administration, HA/DR, and monitoring.
+
+\vspace{3pt}
+\noindent
+\textbf{Founder \& Director} \hfill \textbf{Nov 2013 -- Jul 2016} \\
+\emph{ThoughtBirds Technologies LLP, India} \\
+Built and led an IT services startup, delivering database, cloud, and web solutions while managing teams and clients.
+
+\vspace{3pt}
+\noindent
+\textbf{Associate Database Engineer} \hfill \textbf{Oct 2012 -- Oct 2013} \\
+\emph{Xento Systems, Pune, India} \\
+Supported PostgreSQL operations, query optimization, and application development for a rental business platform.
+
+\vspace{3pt}
+\noindent
+\textbf{Assistant Systems Engineer} \hfill \textbf{Jul 2007 -- Feb 2010} \\
+\emph{Tata Consultancy Services (TCS), Chennai, India} \\
+Provided production support and reporting solutions for enterprise insurance and financial systems.
+
+%----------------------------------------------------------------------------------------
+%	CERTIFICATIONS & EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Certifications \& Education}
+\begin{multicols}{2}
+    \begin{itemize}[leftmargin=*, noitemsep]
+        \item \textbf{AWS Certified Database} - Specialty (2024)
+        \item \textbf{HashiCorp Certified:} Terraform Associate (2023)
+        \item \textbf{Certified Kubernetes Administrator} (CKA) (2021)
+        \item \textbf{Certified Kubernetes App Developer} (CKAD) (2021)
+        \item \textbf{AWS Certified Solutions Architect} - Associate (2019)
+        \item \textbf{EDB Certified Professional} - PostgreSQL 12 (2020)
+        \item \textbf{New Relic} Full Stack Observability Practitioner (2024)
+        \item \textbf{Diploma in Engineering} (Secured 5th Rank in State JEE)
+        \item \textbf{University of London:} Managing People at Work (2023)
+    \end{itemize}
+\end{multicols}
+
+%----------------------------------------------------------------------------------------
+%	ACHIEVEMENTS & BLOGS
+%----------------------------------------------------------------------------------------
+\section{Key Achievements \& Publications}
+\begin{itemize}[leftmargin=*, noitemsep]
+    \item \textbf{Cost Savings:} Recognized for driving multi-million-dollar infrastructure cost savings through server optimization, database performance tuning, and large-scale automation initiatives.
+    \item \textbf{Awards:} Recipient of Extra Miles Awards across multiple organizations for consistently exceeding performance.
+    \item \textbf{Startup Success:} Successfully founded and operated an IT services startup for over two years.
+    \item \textbf{Academic:} Secured 15th rank in NTSE State-Level Exam; Presented technical paper on HVDC.
+    \item \textbf{Blog Posts:} "Solving AWS Aurora RDS load balancing problem with pgPool-II", "PostgreSQL Architecture", "Normalization in OLTP vs. OLAP", "Install and configure pgBadger for PostgreSQL on Linux".
+\end{itemize}
+
+% PAGE BREAK TO START DETAILED PROJECTS ON PAGE 3
+\newpage
+
+%----------------------------------------------------------------------------------------
+%	DETAILED PROFESSIONAL PROJECTS
+%----------------------------------------------------------------------------------------
+\section{Professional Projects (Detailed)}
+
+% PROJECT 9
+\noindent
+\begin{minipage}{\textwidth}
+    \textbf{\large Project \#9: Database Reliability Engineering} \hfill \textbf{Mar 2025 -- Present} \\
+    \textit{Inspectorio (Role: Senior Database Reliability Engineer)}
+    \begin{itemize}[leftmargin=*, noitemsep, topsep=2pt]
+        \item Supporting transition of complete DataOps platform of Carlyle from incumbents to Hexaware.
+        \item Leading and Managing the DataOps team to support smooth transition and conclude the KT sessions and shadowing on time.
+        \item Conducted an internal training and workshops on PostgreSQL DB Administration company wide.
+        \item Installing \& Upgrading database servers, determining backup strategies \& security procedures, setting up HA \& DR.
+        \item Managing Snowflake and SnapLogic infrastructure on cloud using Terraform and Azure DevOps.
+        \item Deploying schema migrations using FlywayDB.
+    \end{itemize}
+    \small{\textbf{Environment:} AWS Cloud Services, Terraform, PostgreSQL, RDS/Aurora, SQL Server, GitHub, UNIX, SQL, Shell Scripting, Jira, Confluence, Snowflake, FlywayDB.}
+\end{minipage}
+\vspace{10pt}
+
+% PROJECT 8
+\noindent
+\begin{minipage}{\textwidth}
+    \textbf{\large Project \#8: Carlyle Project Transition} \hfill \textbf{Feb 2024 -- Mar 2025} \\
+    \textit{Hexaware / Carlyle (Role: Technical Specialist - Cloud Architect \& DB Consultant)}
+    \begin{itemize}[leftmargin=*, noitemsep, topsep=2pt]
+        \item Supporting transition of complete DataOps platform of Carlyle from incumbents to Hexaware.
+        \item Leading and Managing the DataOps team to support smooth transition and conclude the KT sessions and shadowing on time.
+        \item Conducted an internal training and workshops on PostgreSQL DB Administration company wide.
+        \item Installing \& Upgrading database servers, determining backup strategies \& security procedures, setting up HA \& DR.
+        \item Managing Snowflake and SnapLogic infrastructure on cloud using Terraform and Azure DevOps. Deploying schema migrations using FlywayDB.
+    \end{itemize}
+    \small{\textbf{Environment:} AWS Cloud Services, Terraform, PostgreSQL, RDS/Aurora, SQL Server, GitHub, UNIX, SQL, Shell Scripting, Jira, Confluence, Snowflake, FlywayDB.}
+\end{minipage}
+\vspace{10pt}
+
+% PROJECT 7
+\noindent
+\begin{minipage}{\textwidth}
+    \textbf{\large Project \#7: Site Reliability Engineering} \hfill \textbf{Mar 2019 -- Feb 2022} \\
+    \textit{Talabat - Delivery Hero (Role: Senior Database Administrator)}
+    \begin{itemize}[leftmargin=*, noitemsep, topsep=2pt]
+        \item Documenting and educating developers about the SQL and database best practices and standards.
+        \item Conducted KT sessions and workshops on: choosing DB engines, column ordering impact, referential integrity, indexing, and data modelling schema design.
+        \item Managed incident and on-call management process.
+        \item Ensuring site and infrastructure reliability by implementing HA and DR solutions.
+        \item Managing a fleet of AWS RDS and Aurora instances, configuring them for maximum performance and securing them with VPC, subnets, NACL, and security groups.
+        \item Configuring and Analyzing RDS performance insights and tuning slow-running queries.
+        \item Migrated databases from on-Premise SQL Server to PostgreSQL on cloud, achieving 200\% performance improvement.
+        \item Implemented and configured DB CI/CD for quicker and error-free deployments using FlywayDB.
+        \item Configuring Alerts and monitoring using AWS CloudWatch, SNS, NewRelic and OpsGenie.
+        \item Defined Incident Management Process and implemented tools like OpsGenie, PagerDuty, NewRelic.
+        \item Helping the DevOps team to reduce Time to Release by automating CI/CD pipelines using CircleCI, AWS ECR, Docker, GitHub.
+        \item Using Kubernetes, Helm Charts, and Shell Scripts to configure tools like pgBadger, pgRepack.
+        \item Actively participated in regular DR exercises, ensuring infra is up in less than 2 hours.
+    \end{itemize}
+    \small{\textbf{Environment:} AWS Cloud Services, Terraform, Packer, Docker, Kubernetes, PostgreSQL, SQL Server, GitHub, UNIX, Splunk, New Relic, Nagios, pgBadger, pgRepack, OpsGenie, PagerDuty, CircleCI.}
+\end{minipage}
+\vspace{10pt}
+
+% PROJECT 6
+\noindent
+\begin{minipage}{\textwidth}
+    \textbf{\large Project \#6: Application and Database Operations} \hfill \textbf{Apr 2017 -- Mar 2019} \\
+    \textit{Optum Analytics - UHG (Role: Database Administrator)}
+    \begin{itemize}[leftmargin=*, noitemsep, topsep=2pt]
+        \item Leading a team of highly skilled PostgreSQL \& MySQL DBAs.
+        \item Performed Architectural Health Checkup of company's infrastructure and improved performance of existing PostgreSQL servers by up to 150\% by tuning OS and DB configurations.
+        \item Performed Installation, Upgradation, Configuration, Replication, and Maintenance of PostgreSQL and MySQL servers.
+        \item Planned and Implemented data backup, recovery, security procedures, Capacity Planning, HA \& DR setup.
+        \item Travelled to United States to understand requirements and implement HA solution for a critical product.
+        \item Prepared shell scripts for task automation; Server performance tuning and query tuning.
+        \item Implemented various tools like Nagios, pgBadger, pgAdmin, pgPool-II, PEM, OPM.
+        \item Created SSRS report to provide daily status of backups on all DB engines (Oracle, MySQL, PostgreSQL, SQL Server).
+    \end{itemize}
+    \small{\textbf{Environment:} PostgreSQL 9.x/10, MySQL, MongoDB, MS SQL Server, Oracle, UNIX, SQL, Shell Scripting, Splunk, New Relic, vRealize, Nagios, AWS Cloud, SSRS.}
+\end{minipage}
+\vspace{10pt}
+
+% PROJECT 5
+\noindent
+\begin{minipage}{\textwidth}
+    \textbf{\large Project \#5: EMaaS - Energy Management as a Service} \hfill \textbf{Aug 2016 -- Apr 2017} \\
+    \textit{Aricent Technologies at Cisco Systems (Role: PostgreSQL DBA)}
+    \begin{itemize}[leftmargin=*, noitemsep, topsep=2pt]
+        \item Installation, Configuration, Replication and Maintenance of PostgreSQL servers.
+        \item Planned and Implemented data backup, recovery, and security procedures.
+        \item Performed installation and testing of upgrades and patches.
+        \item Capacity Planning, High Availability \& Disaster Recovery site setup.
+        \item Prepared shell scripts for task automation; Server performance tuning and query tuning.
+        \item Implemented tools like Nagios, pgBadger, pgAdmin, pgPool-II, PEM, OPM.
+        \item Worked on Docker containers.
+        \item Participated actively in 5 days' workshop on MongoDB.
+    \end{itemize}
+    \small{\textbf{Environment:} PostgreSQL 9.x, MySQL 5.6, UNIX, SQL, Shell Scripting, Docker, Nagios, pgBadger, pgAdmin4, AWS Cloud, Confluence.}
+\end{minipage}
+\vspace{10pt}
+
+% PROJECT 4
+\noindent
+\begin{minipage}{\textwidth}
+    \textbf{\large Project \#4: IT Services Startup} \hfill \textbf{Nov 2013 -- Jul 2016} \\
+    \textit{ThoughtBirds Technologies LLP (Role: Co-Founder Director)}
+    \begin{itemize}[leftmargin=*, noitemsep, topsep=2pt]
+        \item Managed everything from client acquisition to requirement analysis to design and development of web-based applications.
+        \item Installation, configuration, and maintenance of PostgreSQL \& MySQL servers.
+        \item Planned and implemented data backup, recovery, and security procedures; HA & DR setup.
+        \item Learned and worked with new technologies like AWS, Hadoop, HDFS, MapReduce, Hive, Pig, HBase, Sqoop, Flume, and Zookeeper.
+        \item Performance tuning of WordPress and Magento based websites.
+        \item Implemented scrum agile methodology using open-source tools to manage projects.
+        \item Recruited, trained, and managed a team of 6.
+    \end{itemize}
+    \small{\textbf{Environment:} PostgreSQL, pgAdmin, Nagios, AWS Cloud, Oracle 11g, UNIX, SQL, Shell Scripting, PHP, HTML, CSS, jQuery, WordPress, Magento, Redmine, JIRA.}
+\end{minipage}
+\vspace{10pt}
+
+% PROJECT 3
+\noindent
+\begin{minipage}{\textwidth}
+    \textbf{\large Project \#3: Operations} \hfill \textbf{Oct 2012 -- Oct 2013} \\
+    \textit{Xento Systems (Role: Database Administrator)}
+    \begin{itemize}[leftmargin=*, noitemsep, topsep=2pt]
+        \item Checking errors on live databases and resolving them while working closely with developers.
+        \item Managing and monitoring PostgreSQL servers on development \& stage environments.
+        \item Backup \& Restoration; Monitoring Load on servers and max connections using Nagios.
+        \item Optimization \& Performance Tuning of SQL queries.
+        \item Installation, Upgradation \& Replication of PostgreSQL databases.
+        \item Wrote shell scripts to automate various database processes.
+        \item Performing RCA of Exceptions/SRs in production environment and fixing them within defined SLA.
+    \end{itemize}
+    \small{\textbf{Environment:} Shell Scripting, PostgreSQL 9.x, pgAdmin, Nagios, Oracle 11g, PHP5, UNIX.}
+\end{minipage}
+\vspace{10pt}
+
+% PROJECT 2
+\noindent
+\begin{minipage}{\textwidth}
+    \textbf{\large Project \#2: Financial Management Reporting (FMR)} \hfill \textbf{Nov 2008 -- Feb 2010} \\
+    \textit{The Hartford Life Insurance (Role: Report Designer | Production Support)}
+    \begin{itemize}[leftmargin=*, noitemsep, topsep=2pt]
+        \item Designed and delivered enterprise reports using Business Objects and Crystal Reports.
+        \item Managed daily batch operations, monitored report execution, validated outputs, and ensured timely delivery.
+        \item Improved monthly FARS and RPS reporting workflows, reducing processing time by ~50\%.
+        \item Provided production support by troubleshooting report failures and resolving incidents within defined SLAs.
+        \item Tracked incidents using BMC Remedy and custom MS Access tools.
+    \end{itemize}
+    \small{\textbf{Environment:} Business Objects XI, Crystal Reports XI, Oracle 9i, TOAD, BMC Remedy, MS Access.}
+\end{minipage}
+\vspace{10pt}
+
+% PROJECT 1
+\noindent
+\begin{minipage}{\textwidth}
+    \textbf{\large Project \#1: Information Delivery} \hfill \textbf{Nov 2007 -- Oct 2008} \\
+    \textit{The Hartford Life Insurance (Role: Mailbox Administration / Production Support)}
+    \begin{itemize}[leftmargin=*, noitemsep, topsep=2pt]
+        \item Interacting with end users to understand issues in applications like Business Objects, Crystal Reports, Infolink.
+        \item Handling tickets/SRs for Production issues and solving them within defined SLA.
+        \item Daily Batch Monitoring on reports; Enhancing \& testing Crystal Reports.
+        \item Providing KT of The Hartford business process and IDS Info Delivery module to new joiners.
+    \end{itemize}
+    \small{\textbf{Environment:} Oracle 9i, BMC Remedy 7, Crystal Reports XI, BO XI, TOAD, MS Access.}
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+%	PERSONAL DETAILS
+%----------------------------------------------------------------------------------------
+\section{Personal Details}
+\begin{tabular}{@{}ll}
+    \textbf{Name:} & Sumeet Kumar Shukla \\
+    \textbf{Date of Birth:} & 04-Nov-1988 \\
+    \textbf{Nationality:} & Indian \\
+    \textbf{Languages Known:} & English, Hindi, Tamil \\
+    \textbf{LinkedIn:} & \href{https://in.linkedin.com/in/sumeetshukla}{https://in.linkedin.com/in/sumeetshukla}
+\end{tabular}
+
+\end{document}

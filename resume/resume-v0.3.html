@@ -1,0 +1,1197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumeet K Shukla - Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @page {
+            size: A4;
+            margin: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.5;
+            color: #0f172a;
+            background: #f5f5f5;
+        }
+
+        .page {
+            width: 210mm;
+            height: 297mm;
+            margin: 0 auto;
+            background: white;
+            display: flex;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .page.page-2 {
+            display: block;
+        }
+
+        .sidebar {
+            width: 72mm;
+            background: linear-gradient(180deg, #334155 0%, #1e293b 100%);
+            color: white;
+            padding: 25px 18px;
+            position: relative;
+        }
+
+        .sidebar::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.05);
+            pointer-events: none;
+        }
+
+        .sidebar-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .profile-section {
+            text-align: center;
+            margin-bottom: 20px;
+            padding-bottom: 18px;
+            border-bottom: 2px solid rgba(5, 150, 105, 0.5);
+        }
+
+        .profile-name {
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            letter-spacing: 0.5px;
+        }
+
+        .profile-title {
+            font-size: 14px;
+            opacity: 0.95;
+            line-height: 1.4;
+        }
+
+        .sidebar-section {
+            margin-bottom: 15px;
+        }
+
+        .sidebar-heading {
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            margin-bottom: 10px;
+            padding-bottom: 6px;
+            border-bottom: 2px solid rgba(5, 150, 105, 0.5);
+            color: #059669;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 7px;
+            font-size: 10.5px;
+            line-height: 1.4;
+        }
+
+        .contact-icon {
+            margin-right: 8px;
+            font-size: 14px;
+            min-width: 18px;
+            color: #059669;
+        }
+
+        .skill-category {
+            margin-bottom: 14px;
+        }
+
+        .skill-category-title {
+            font-size: 10px;
+            font-weight: 600;
+            margin-bottom: 6px;
+            opacity: 0.95;
+        }
+
+        .skill-list {
+            font-size: 10px;
+            line-height: 1.5;
+            opacity: 0.92;
+        }
+
+        .blog-item-sidebar {
+            margin-bottom: 10px;
+            padding-left: 18px;
+            position: relative;
+            font-size: 9.5px;
+            line-height: 1.4;
+        }
+
+        .blog-item-sidebar::before {
+            content: none !important;
+            display: none;
+        }
+
+        .icon-marker {
+            position: absolute;
+            left: 0;
+            top: 2px;
+            color: #059669;
+            width: 14px;
+            text-align: center;
+            font-size: 10px;
+        }
+
+        .blog-item-sidebar a {
+            color: white;
+            text-decoration: none;
+            opacity: 0.92;
+            transition: opacity 0.2s;
+        }
+
+        .blog-item-sidebar a:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+
+        .main-content {
+            flex: 1;
+            padding: 30px 25px;
+            background: white;
+        }
+
+        .main-content-full {
+            padding: 30px 40px;
+            background: white;
+        }
+
+        .header-main {
+            margin-bottom: 15px;
+        }
+
+        .main-title {
+            font-size: 15px;
+            font-weight: 700;
+            color: #1e293b;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 3px solid #059669;
+            position: relative;
+        }
+
+        .main-title::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: #1e293b;
+        }
+
+        .summary-text {
+            font-size: 11px;
+            text-align: justify;
+            line-height: 1.6;
+            color: #374151;
+        }
+
+        .experience-item {
+            margin-bottom: 12px;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .experience-item::before {
+            content: none !important;
+            display: none;
+        }
+
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 4px;
+        }
+
+        .job-title {
+            font-weight: 700;
+            color: #1e293b;
+            font-size: 12px;
+            line-height: 1.3;
+        }
+
+        .company {
+            color: #059669;
+            font-size: 11px;
+            font-weight: 600;
+            margin-bottom: 1.5px;
+        }
+
+        .date {
+            color: #6b7280;
+            font-size: 9px;
+            white-space: nowrap;
+            font-style: italic;
+        }
+
+        .job-description {
+            color: #4b5563;
+            font-size: 10.5px;
+            line-height: 1.5;
+        }
+
+        .achievement-item {
+            margin-bottom: 8px;
+            padding-left: 18px;
+            position: relative;
+            font-size: 10.5px;
+            line-height: 1.5;
+            color: #374151;
+        }
+
+        .achievement-item::before {
+            content: none !important;
+            display: none;
+        }
+
+        .education-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .experience-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .edu-item {
+            padding: 0;
+            background: none;
+            border: none;
+            margin-bottom: 5px;
+        }
+
+        .edu-degree {
+            font-weight: 700;
+            color: #1e293b;
+            font-size: 11.5px;
+            margin-bottom: 4px;
+        }
+
+        .edu-institution {
+            color: #4b5563;
+            font-size: 10px;
+            margin-bottom: 2px;
+        }
+
+        .edu-year {
+            color: #6b7280;
+            font-size: 8.5px;
+            font-style: italic;
+        }
+
+        .cert-item-main {
+            margin-bottom: 10px;
+            padding-left: 22px;
+            position: relative;
+            font-size: 10.5px;
+            line-height: 1.4;
+            color: #374151;
+        }
+
+        .cert-item-main::before {
+            content: none !important;
+            display: none;
+        }
+
+        .cert-year {
+            opacity: 0.7;
+            font-size: 8.5px;
+        }
+
+        .cert-section {
+            margin-bottom: 20px;
+        }
+
+        .cert-category-title {
+            font-weight: 700;
+            color: #1e293b;
+            margin-bottom: 8px;
+            font-size: 11px;
+        }
+
+        .detailed-exp-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 8px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+
+        .detailed-exp-item {
+            margin-bottom: 25px;
+            page-break-inside: avoid;
+        }
+
+        .detailed-role {
+            font-size: 13px;
+            font-weight: 700;
+            color: #1e293b;
+        }
+
+        .detailed-company {
+            font-size: 12px;
+            color: #059669;
+            font-weight: 600;
+        }
+
+        .detailed-meta {
+            text-align: right;
+        }
+
+        .detailed-date,
+        .detailed-loc {
+            font-size: 10px;
+            color: #6b7280;
+        }
+
+        .detailed-desc ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .detailed-desc li {
+            position: relative;
+            padding-left: 15px;
+            margin-bottom: 5px;
+            font-size: 10.5px;
+            color: #374151;
+            text-align: justify;
+        }
+
+        .detailed-desc li::before {
+            content: '\f054';
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: #059669;
+            font-size: 8px;
+            top: 4px;
+        }
+
+        @media print {
+            body {
+                background: white;
+                print-color-adjust: exact;
+                -webkit-print-color-adjust: exact;
+            }
+
+            .page {
+                page-break-after: always;
+                margin: 0;
+            }
+
+            .page:last-child {
+                page-break-after: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Page 1 -->
+    <div class="page">
+        <div class="sidebar">
+            <div class="sidebar-content">
+                <div class="profile-section">
+                    <div class="profile-name">Sumeet K Shukla</div>
+                    <div class="profile-title">Senior Database Reliability Engineer & Cloud Architect</div>
+                </div>
+
+                <div class="sidebar-section">
+                    <div class="sidebar-heading">Contact</div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <div>+91 74061 21115</div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div>sumeet.k.shukla@gmail.com</div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+                        <div>linkedin.com/in/sumeetshukla</div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-award"></i></div>
+                        <div>credly.com/users/sumeet-shukla</div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-flag"></i></div>
+                        <div>Indian</div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-language"></i></div>
+                        <div>English, Hindi, Tamil</div>
+                    </div>
+                </div>
+
+                <div class="sidebar-section">
+                    <div class="sidebar-heading">Skills Set</div>
+                    <div class="skill-category">
+                        <div class="skill-category-title">Database Engineering & Operations</div>
+                        <div class="skill-list">PostgreSQL (Primary), AWS RDS & Aurora, GCP CloudSQL & AlloyDB, MySQL,
+                            MongoDB, Amazon Redshift | Performance Tuning & Query Optimization, High Availability &
+                            Disaster Recovery, Replication & Scaling, Security & Compliance, Large-Scale Migrations,
+                            Capacity Planning</div>
+                    </div>
+                    <div class="skill-category">
+                        <div class="skill-category-title">Cloud Infrastructure, DevOps & Automation</div>
+                        <div class="skill-list">AWS (EC2, S3, VPC, CloudWatch, IAM), GCP | Kubernetes, Kustomize, Helm
+                            Charts, Docker, AWS ECR | Infrastructure as Code (Terraform, Packer) | CI/CD (GitHub
+                            Actions, CircleCI) | SQL, Python, Bash, YAML, JSON</div>
+                    </div>
+                    <div class="skill-category">
+                        <div class="skill-category-title">Database Tools & Administration</div>
+                        <div class="skill-list">Flyway, pgAdmin, pgBadger, pgRepack, pgPool, pgAudit, pgBench, Foreign
+                            Data Wrappers, PEM, dBeaver</div>
+                    </div>
+                    <div class="skill-category">
+                        <div class="skill-category-title">Observability & Monitoring</div>
+                        <div class="skill-list">Datadog, New Relic, Splunk, Nagios, SolarWinds, Honeycomb</div>
+                    </div>
+                </div>
+
+                <div class="sidebar-section">
+                    <div class="sidebar-heading">Publications</div>
+                    <div class="blog-item-sidebar"><i class="fab fa-medium icon-marker"></i><a
+                            href="https://medium.com/talabat-tech/solving-aws-aurora-rds-load-balancing-problem-with-pgpool-ii-d54897c95176"
+                            target="_blank">AWS
+                            Aurora RDS load balancing with
+                            pgPool-II</a></div>
+                    <div class="blog-item-sidebar"><i class="fas fa-code-branch icon-marker"></i><a
+                            href="https://github.com/cloudposse/terraform-aws-rds-cluster/pull/67"
+                            target="_blank">Terraform AWS RDS
+                            Cluster: Open-Source
+                            Contribution</a></div>
+                    <div class="blog-item-sidebar"><i class="fab fa-linkedin icon-marker"></i><a
+                            href="https://www.linkedin.com/pulse/postgresql-architecture-sumeet-shukla-1/"
+                            target="_blank">PostgreSQL
+                            Architecture Deep Dive</a>
+                    </div>
+                    <div class="blog-item-sidebar"><i class="fas fa-file-lines icon-marker"></i><a
+                            href="https://medium.com/@sumeet.k.shukla/install-and-configure-pgbadger-for-postgresql-on-centos-2dfd01346896"
+                            target="_blank">pgBadger
+                            for PostgreSQL on Linux</a>
+                    </div>
+                    <div class="blog-item-sidebar"><i class="fas fa-book-open icon-marker"></i><a
+                            href="https://www.linkedin.com/pulse/normalization-oltp-vs-olap-striking-balance-sumeet-shukla-lwubc/"
+                            target="_blank">Normalization
+                            in OLTP vs. OLAP</a></div>
+                    <div class="blog-item-sidebar"><i class="fas fa-book-open icon-marker"></i><a
+                            href="https://www.linkedin.com/pulse/quiet-triumph-signs-youve-truly-solved-database-problem-sumeet-shukla-rnhoc/"
+                            target="_blank">Signs
+                            You've Truly Solved a Database
+                            Administration Problem</a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="header-main">
+                <div class="main-title">Professional Summary</div>
+                <div class="summary-text">
+                    Senior Database Reliability Engineer with 12+ years of experience architecting, scaling, and
+                    operating mission-critical database platforms for high-growth organizations. Deep specialization in
+                    the PostgreSQL ecosystem, with a proven record of driving multi-million-dollar infrastructure
+                    optimization, leading complex cloud migrations, and establishing enterprise-grade reliability
+                    standards across distributed systems. Technical leader experienced in transforming database
+                    operations through strategic automation, Infrastructure as Code (Terraform, Packer), and
+                    cloud-native technologies (Kubernetes, Helm, Docker). Expert in zero-downtime architectures, HA/DR
+                    strategies, advanced performance optimization, and observability frameworks (Datadog, New Relic,
+                    Splunk). Strong influencer of engineering culture through cross-functional collaboration, mentoring
+                    DBA/SRE teams, and implementing operational excellence frameworks including SLAs, runbooks, and
+                    OKRs. Successfully delivered large-scale database migrations, CI/CD automation, and platform
+                    modernization while maintaining 24×7 service reliability, with recognized contributions to the
+                    PostgreSQL community and measurable impact on cost and efficiency.
+                </div>
+            </div>
+
+            <div class="header-main">
+                <div class="main-title">Experience Summary</div>
+
+                <div class="experience-item">
+                    <i class="fas fa-server icon-marker"></i>
+                    <div class="experience-header">
+                        <div>
+                            <div class="job-title">Senior Database Reliability Engineer</div>
+                            <div class="company">Inspectorio Inc., India</div>
+                        </div>
+                        <div class="date">Mar 2025 – Present</div>
+                    </div>
+                    <div class="job-description">
+                        <ul style="list-style-type: none; padding-left: 0;">
+                            <li style="position: relative; padding-left: 12px; margin-bottom: 3px;"><span
+                                    style="position: absolute; left: 0; color: #059669;">•</span>Own GCP Cloud SQL &
+                                AlloyDB reliability and scalability across 25+ production PostgreSQL instances,
+                                sustaining >99.95% availability.</li>
+                            <li style="position: relative; padding-left: 12px; margin-bottom: 3px;"><span
+                                    style="position: absolute; left: 0; color: #059669;">•</span>Delivered 90%+ query
+                                latency reduction through deep SQL performance tuning, indexing strategies, and bloat
+                                remediation on production workloads.</li>
+                            <li style="position: relative; padding-left: 12px; margin-bottom: 3px;"><span
+                                    style="position: absolute; left: 0; color: #059669;">•</span>Built automation-first
+                                DB platform using Terraform, Kubernetes, and Kafka, enabling safe migrations, repeatable
+                                operations, and rapid product scaling.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <i class="fas fa-cloud icon-marker"></i>
+                    <div class="experience-header">
+                        <div>
+                            <div class="job-title">Lead Database Reliability Engineer</div>
+                            <div class="company">Hexaware Technologies, India</div>
+                        </div>
+                        <div class="date">Feb 2024 – Mar 2025</div>
+                    </div>
+                    <div class="job-description">
+                        <ul style="list-style-type: none; padding-left: 0;">
+                            <li style="position: relative; padding-left: 12px; margin-bottom: 3px;"><span
+                                    style="position: absolute; left: 0; color: #059669;">•</span>Led enterprise platform
+                                transitions and steady-state ownership across PostgreSQL, Snowflake, and SnapLogic on
+                                AWS, ensuring zero critical outages during vendor handovers.</li>
+                            <li style="position: relative; padding-left: 12px; margin-bottom: 3px;"><span
+                                    style="position: absolute; left: 0; color: #059669;">•</span>Built and mentored
+                                DBA/DBRE teams while establishing Terraform-driven IaC, governance standards, SOPs,
+                                SLAs, and runbooks for consistent enterprise delivery.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <i class="fas fa-briefcase icon-marker"></i>
+                    <div class="experience-header">
+                        <div>
+                            <div class="job-title">Principal PostgreSQL Database Reliability Engineer</div>
+                            <div class="company">Independent Consulting, India</div>
+                        </div>
+                        <div class="date">Mar 2022 – Feb 2024</div>
+                    </div>
+                    <div class="job-description">Delivered PostgreSQL platform architecture, migrations, performance
+                        engineering, and automation across multiple production clients.</div>
+                </div>
+
+                <div class="experience-item">
+                    <i class="fas fa-utensils icon-marker"></i>
+                    <div class="experience-header">
+                        <div>
+                            <div class="job-title">Senior Site Reliability Engineer (Database Platforms)</div>
+                            <div class="company">Talabat (Delivery Hero Group), Dubai, UAE</div>
+                        </div>
+                        <div class="date">Mar 2019 – Feb 2022</div>
+                    </div>
+                    <div class="job-description">
+                        <ul style="list-style-type: none; padding-left: 0;">
+                            <li style="position: relative; padding-left: 12px; margin-bottom: 3px;"><span
+                                    style="position: absolute; left: 0; color: #059669;">•</span>Owned AWS RDS & Aurora
+                                platforms at scale, designing HA/DR, capacity planning, and governance for high-traffic,
+                                consumer-facing workloads.</li>
+                            <li style="position: relative; padding-left: 12px; margin-bottom: 3px;"><span
+                                    style="position: absolute; left: 0; color: #059669;">•</span>Architected
+                                Terraform-based infrastructure and standardized database provisioning, eliminating
+                                environment drift and enabling rapid regional expansion.</li>
+                            <li style="position: relative; padding-left: 12px; margin-bottom: 3px;"><span
+                                    style="position: absolute; left: 0; color: #059669;">•</span>Integrated
+                                Kubernetes-aware operational models with monitoring, access controls, and incident
+                                processes, reducing MTTR and improving platform reliability during peak demand.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <i class="fas fa-heartbeat icon-marker"></i>
+                    <div class="experience-header">
+                        <div>
+                            <div class="job-title">Senior Database Administrator</div>
+                            <div class="company">Optum (UnitedHealth Group), Chennai, India</div>
+                        </div>
+                        <div class="date">Apr 2017 – Mar 2019</div>
+                    </div>
+                    <div class="job-description">
+                        <ul style="list-style-type: none; padding-left: 0;">
+                            <li style="position: relative; padding-left: 12px; margin-bottom: 3px;"><span
+                                    style="position: absolute; left: 0; color: #059669;">•</span>Led a DBA team managing
+                                PostgreSQL & MySQL platforms, achieving 150% performance improvement through advanced
+                                tuning.</li>
+                            <li style="position: relative; padding-left: 12px; margin-bottom: 3px;"><span
+                                    style="position: absolute; left: 0; color: #059669;">•</span>Designed and
+                                implemented HA/DR architectures and capacity planning strategies for mission-critical
+                                enterprise systems.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <i class="fas fa-network-wired icon-marker"></i>
+                    <div class="experience-header">
+                        <div>
+                            <div class="job-title">PostgreSQL Database Administrator</div>
+                            <div class="company">Aricent Technologies (Cisco EMaaS), Bangalore, India</div>
+                        </div>
+                        <div class="date">Aug 2016 – Apr 2017</div>
+                    </div>
+                    <div class="job-description">
+                        <ul style="list-style-type: none; padding-left: 0;">
+                            <li style="position: relative; padding-left: 12px; margin-bottom: 3px;"><span
+                                    style="position: absolute; left: 0; color: #059669;">•</span>Administered
+                                PostgreSQL databases for Cisco’s cloud EMaaS platform, implementing High Availability
+                                and Disaster Recovery.</li>
+                            <li style="position: relative; padding-left: 12px; margin-bottom: 3px;"><span
+                                    style="position: absolute; left: 0; color: #059669;">•</span>Automated database
+                                monitoring and maintenance operations using shell scripting and open-source tools.</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 2 -->
+    <div class="page page-2">
+        <div class="main-content-full">
+            <div class="header-main">
+                <div class="main-title">Earlier Experience</div>
+                <div class="experience-grid">
+                    <div class="experience-item">
+                        <i class="fas fa-rocket icon-marker"></i>
+                        <div class="experience-header">
+                            <div>
+                                <div class="job-title">Founder & Director</div>
+                                <div class="company">ThoughtBirds Technologies LLP, India</div>
+                            </div>
+                            <div class="date">Nov 2013 – Jul 2016</div>
+                        </div>
+                        <div class="job-description">
+                            <ul style="list-style-type: none; padding-left: 0;">
+                                <li style="position: relative; padding-left: 12px; margin-bottom: 3px;"><span
+                                        style="position: absolute; left: 0; color: #059669;">•</span>Founded and led an
+                                    IT
+                                    services firm, delivering full-cycle PostgreSQL database solutions and web
+                                    applications.
+                                </li>
+                                <li style="position: relative; padding-left: 12px; margin-bottom: 3px;"><span
+                                        style="position: absolute; left: 0; color: #059669;">•</span>Managed client
+                                    acquisition, solution design, and cross-functional engineering teams using Agile
+                                    methodologies.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="experience-item">
+                        <i class="fas fa-code icon-marker"></i>
+                        <div class="experience-header">
+                            <div>
+                                <div class="job-title">Associate Database Engineer</div>
+                                <div class="company">Xento Systems, Pune, India</div>
+                            </div>
+                            <div class="date">Oct 2012 – Oct 2013</div>
+                        </div>
+                        <div class="job-description">
+                            <ul style="list-style-type: none; padding-left: 0;">
+                                <li style="position: relative; padding-left: 12px; margin-bottom: 3px;"><span
+                                        style="position: absolute; left: 0; color: #059669;">•</span>Managed production
+                                    PostgreSQL databases and optimized query performance for a high-traffic rental
+                                    platform.</li>
+                                <li style="position: relative; padding-left: 12px; margin-bottom: 3px;"><span
+                                        style="position: absolute; left: 0; color: #059669;">•</span>Collaborated with
+                                    development teams to design schemas and streamline backend application logic.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="experience-item">
+                        <i class="fas fa-building icon-marker"></i>
+                        <div class="experience-header">
+                            <div>
+                                <div class="job-title">Assistant Systems Engineer</div>
+                                <div class="company">Tata Consultancy Services (TCS), Chennai, India</div>
+                            </div>
+                            <div class="date">Jul 2007 – Feb 2010</div>
+                        </div>
+                        <div class="job-description">
+                            <ul style="list-style-type: none; padding-left: 0;">
+                                <li style="position: relative; padding-left: 12px; margin-bottom: 3px;"><span
+                                        style="position: absolute; left: 0; color: #059669;">•</span>Provided technical
+                                    support for enterprise BI solutions using Oracle and Business Objects, enhancing
+                                    reporting stability.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-main">
+                <div class="main-title">Achievements</div>
+                <div class="achievement-item"><i class="fas fa-trophy icon-marker"></i>Recipient of Extra Miles Awards
+                    across multiple organizations for
+                    consistently exceeding performance and delivery expectations.</div>
+                <div class="achievement-item"><i class="fas fa-chart-line icon-marker"></i>Recognized for driving
+                    multi-million-dollar infrastructure cost savings
+                    through server optimization, database performance tuning, and large-scale automation initiatives.
+                </div>
+                <div class="achievement-item"><i class="fas fa-star icon-marker"></i>Acknowledged for leading automation
+                    and reliability improvements, reducing
+                    manual effort and improving operational efficiency across database platforms.</div>
+                <div class="achievement-item"><i class="fas fa-building icon-marker"></i>Successfully founded and
+                    operated an IT services startup for over two
+                    years, delivering technology solutions and managing clients, teams, and delivery outcomes.</div>
+                <div class="achievement-item"><i class="fas fa-sync-alt icon-marker"></i>Introduced process improvements
+                    to the Financial Management Reporting
+                    (FMR) workflow, resulting in measurable efficiency and reliability gains.</div>
+                <div class="achievement-item"><i class="fas fa-file-powerpoint icon-marker"></i>Presented a technical
+                    paper on High Voltage Direct Current (HVDC) at a
+                    state-level forum.</div>
+            </div>
+
+            <div class="header-main">
+                <div class="main-title">Certifications</div>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                    <div>
+                        <div class="cert-section">
+                            <div class="cert-category-title">Core DBRE & Cloud Platforms</div>
+                            <div class="cert-item-main"><i class="fab fa-aws icon-marker"></i>AWS Certified Database –
+                                Specialty <span class="cert-year">(2024)</span></div>
+                            <div class="cert-item-main"><i class="fas fa-database icon-marker"></i>EDB Certified
+                                Professional – PostgreSQL 12 <span class="cert-year">(2020)</span></div>
+                            <div class="cert-item-main"><i class="fas fa-database icon-marker"></i>EDB Certified
+                                Associate – PostgreSQL 12 <span class="cert-year">(2020)</span></div>
+                            <div class="cert-item-main"><i class="fab fa-aws icon-marker"></i>AWS Certified Solutions
+                                Architect – Associate <span class="cert-year">(2019)</span></div>
+                        </div>
+
+                        <div class="cert-section">
+                            <div class="cert-category-title">Platform Automation & Cloud-Native</div>
+                            <div class="cert-item-main"><i class="fas fa-code-branch icon-marker"></i>HashiCorp
+                                Certified: Terraform Associate <span class="cert-year">(2023)</span></div>
+                            <div class="cert-item-main"><i class="fas fa-dharmachakra icon-marker"></i>Certified
+                                Kubernetes Administrator (CKA) <span class="cert-year">(2021)</span></div>
+                            <div class="cert-item-main"><i class="fas fa-dharmachakra icon-marker"></i>Certified
+                                Kubernetes Application Developer (CKAD) <span class="cert-year">(2021)</span></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="cert-section">
+                            <div class="cert-category-title">Observability & Delivery</div>
+                            <div class="cert-item-main"><i class="fas fa-chart-bar icon-marker"></i>New Relic Full Stack
+                                Observability Practitioner <span class="cert-year">(2024)</span></div>
+                            <div class="cert-item-main"><i class="fas fa-tasks icon-marker"></i>Scrum Fundamentals
+                                Certified <span class="cert-year">(2014)</span></div>
+                            <div class="cert-item-main"><i class="fas fa-graduation-cap icon-marker"></i>University of
+                                London – A Practical Guide to Managing People at
+                                Work <span class="cert-year">(2023)</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-main">
+                <div class="main-title">Education</div>
+                <div class="education-grid">
+                    <div class="edu-item">
+                        <div class="edu-degree"><i class="fas fa-user-graduate"
+                                style="margin-right: 5px; color: #059669;"></i>Master of Computer Applications (MCA)
+                        </div>
+                        <div class="edu-institution">Pune University, Pune</div>
+                        <div class="edu-year">2010 – 2013</div>
+                    </div>
+                    <div class="edu-item">
+                        <div class="edu-degree"><i class="fas fa-graduation-cap"
+                                style="margin-right: 5px; color: #059669;"></i>Bachelor of Computer Applications (BCA)
+                        </div>
+                        <div class="edu-institution">Annamalai University, Chennai</div>
+                        <div class="edu-year">2008 – 2010</div>
+                    </div>
+                    <div class="edu-item">
+                        <div class="edu-degree"><i class="fas fa-certificate"
+                                style="margin-right: 5px; color: #059669;"></i>Diploma in Electrical & Electronics
+                            Engineering</div>
+                        <div class="edu-institution">Central Polytechnic College, Chennai</div>
+                        <div class="edu-year">2004 – 2007</div>
+                    </div>
+                    <div class="edu-item">
+                        <div class="edu-degree"><i class="fas fa-school"
+                                style="margin-right: 5px; color: #059669;"></i>Matriculation (CBSE Board)</div>
+                        <div class="edu-institution">Government Higher Secondary School, Dirang</div>
+                        <div class="edu-year">2004</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 3 -->
+    <div class="page">
+        <div class="main-content-full">
+            <div class="header-main">
+                <div class="main-title">Detailed Professional Experience</div>
+            </div>
+
+            <div class="detailed-exp-item">
+                <div class="detailed-exp-header">
+                    <div>
+                        <div class="detailed-role">Senior Database Reliability Engineer</div>
+                        <div class="detailed-company">Inspectorio Inc.</div>
+                    </div>
+                    <div class="detailed-meta">
+                        <div class="detailed-date">Mar 2025 – Present</div>
+                        <div class="detailed-loc">India</div>
+                    </div>
+                </div>
+                <div class="detailed-desc">
+                    <ul>
+                        <li><strong>Platform Ownership & Scale:</strong> Own reliability, performance, and scalability
+                            of production-critical, multi-cloud data platforms, supporting 25+ PostgreSQL instances
+                            across GCP Cloud SQL & AlloyDB, Kafka, MongoDB, and Elasticsearch.</li>
+                        <li><strong>Performance Engineering:</strong> Led deep PostgreSQL optimization initiatives,
+                            delivering up to 99% improvement in execution time and ~90% latency reduction through SQL
+                            rewrites, advanced indexing, bloat remediation, memory tuning, and server-level
+                            optimization.</li>
+                        <li><strong>Platform Strategy & Governance:</strong> Provide technical leadership by defining
+                            platform standards, roadmaps, and best practices, evolving databases from service-level
+                            dependencies into a governed, scalable platform aligned with long-term business goals.</li>
+                        <li><strong>Infrastructure as Code (Terraform):</strong> Refactored and modernized Terraform
+                            into product-aligned workspaces, eliminating CI/CD bottlenecks, improving deployment
+                            reliability, and reducing long-term maintenance risk.</li>
+                        <li><strong>Zero-Downtime Operations:</strong> Executed safe, backward-compatible database and
+                            Terraform module upgrades with zero production downtime across environments.</li>
+                        <li><strong>DB-Ops Automation:</strong> Built end-to-end PostgreSQL automation (health checks,
+                            bloat detection, automated reindexing, vacuum/analyze, upgrade preflight checks),
+                            significantly reducing manual DBA effort and preventing recurring regressions.</li>
+                        <li><strong>Kubernetes Automation:</strong> Designed Kubernetes CronJob–based frameworks to
+                            operationalize routine database maintenance and eliminate manual toil at scale.</li>
+                        <li><strong>Security, Observability & SLOs:</strong> Drove security hardening and observability
+                            initiatives, enforcing SSL-only connectivity, defining SLO-driven operations, and leading
+                            blameless incident postmortems as primary incident owner.</li>
+                        <li><strong>Cross-Functional Enablement:</strong> Partnered with SRE, Platform, and Product
+                            Engineering teams to proactively scale systems, reduce operational risk, and support
+                            reliable product growth.</li>
+                        <li><strong>Operational Leadership:</strong> Recognized for independent execution, strong
+                            documentation, and calm, decisive leadership during high-severity production incidents.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="detailed-exp-item">
+                <div class="detailed-exp-header">
+                    <div>
+                        <div class="detailed-role">Lead Database Reliability Engineer</div>
+                        <div class="detailed-company">Hexaware Technologies</div>
+                    </div>
+                    <div class="detailed-meta">
+                        <div class="detailed-date">Feb 2024 – Mar 2025</div>
+                        <div class="detailed-loc">India</div>
+                    </div>
+                </div>
+                <div class="detailed-desc">
+                    <ul>
+                        <li><strong>Platform Transition & Ownership:</strong> Led end-to-end transition, stabilization,
+                            and steady-state ownership of enterprise data platforms across PostgreSQL, Snowflake, and
+                            SnapLogic on AWS, ensuring zero critical outages during vendor handovers.</li>
+                        <li><strong>Team Building & Enablement:</strong> Built, hired, and mentored a high-performing
+                            DBA / DBRE team, establishing structured onboarding, knowledge transfer (KT), and
+                            operational readiness for large-scale enterprise clients.</li>
+                        <li><strong>Cloud-Native Operating Model (IaC):</strong> Designed and implemented AWS- and
+                            Terraform-based Infrastructure as Code to standardize provisioning, enable repeatable
+                            environments, and reduce operational risk.</li>
+                        <li><strong>Governance & Operational Excellence:</strong> Established platform governance,
+                            SLAs, SOPs, and runbooks, improving support quality, reducing incident recurrence, and
+                            enabling reliable long-term service delivery.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="detailed-exp-item">
+                <div class="detailed-exp-header">
+                    <div>
+                        <div class="detailed-role">Senior Site Reliability Engineer (Database Platforms)</div>
+                        <div class="detailed-company">Talabat (Delivery Hero Group)</div>
+                    </div>
+                    <div class="detailed-meta">
+                        <div class="detailed-date">Mar 2019 – Feb 2022</div>
+                        <div class="detailed-loc">Dubai, UAE</div>
+                    </div>
+                </div>
+                <div class="detailed-desc">
+                    <ul>
+                        <li><strong>Database Platform Strategy & IaC:</strong> Architected and operated global-scale AWS
+                            RDS and Aurora platforms using Terraform and Packer, enforcing Infrastructure as Code as the
+                            source of truth, eliminating environment drift, and standardizing regional deployments.</li>
+                        <li><strong>Cloud Scale & Security:</strong> Managed a large fleet of RDS and Aurora instances,
+                            optimizing performance and security via VPC design, subnets, NACLs, and security groups for
+                            high-traffic, consumer-facing workloads.</li>
+                        <li><strong>Availability & Resilience (HA/DR):</strong> Designed and executed enterprise-grade
+                            HA/DR frameworks, led migrations from legacy RDS to Amazon Aurora, and regularly conducted
+                            DR exercises, restoring full infrastructure within <2 hours. </li>
+                        <li><strong>Migration & Modernization:</strong> Led critical database migrations, including
+                            on-prem SQL Server to PostgreSQL on AWS, delivering up to 200% performance improvement
+                            through architecture redesign and tuning.</li>
+                        <li><strong>Performance Engineering & Observability:</strong> Built a comprehensive
+                            observability stack using CloudWatch, SNS, RDS Performance Insights, and New Relic, driving
+                            proactive query tuning and converting incidents into permanent platform hardening.</li>
+                        <li><strong>Release Engineering & CI/CD:</strong> Implemented database CI/CD with Flyway,
+                            enabling faster, safer schema deployments; partnered with DevOps to reduce release time via
+                            CircleCI, Docker, AWS ECR, and GitHub automation.</li>
+                        <li><strong>Operational Automation:</strong> Built Kubernetes- and script-based automation using
+                            Helm, shell scripting, pgBadger and pgRepack, eliminating manual DBA toil and
+                            standardizing routine maintenance.</li>
+                        <li><strong>Incident Management & Developer Enablement:</strong> Defined on-call and incident
+                            processes using OpsGenie and PagerDuty, led RCAs, and enabled engineers through SQL best
+                            practices and schema design guardrails, preventing performance debt early.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 4 -->
+    <div class="page">
+        <div class="main-content-full">
+            <div class="header-main">
+                <div class="main-title">Detailed Professional Experience (Contd.)</div>
+            </div>
+
+
+
+            <div class="detailed-exp-item">
+                <div class="detailed-exp-header">
+                    <div>
+                        <div class="detailed-role">Senior Database Administrator</div>
+                        <div class="detailed-company">Optum (UnitedHealth Group)</div>
+                    </div>
+                    <div class="detailed-meta">
+                        <div class="detailed-date">Apr 2017 – Mar 2019</div>
+                        <div class="detailed-loc">Chennai, India</div>
+                    </div>
+                </div>
+                <div class="detailed-desc">
+                    <ul>
+                        <li><strong>Team Leadership & Operations:</strong> Led and mentored a team of PostgreSQL and
+                            MySQL DBAs, driving operational excellence and reliability across multiple production
+                            environments.</li>
+                        <li><strong>Platform Health & Architecture Assessment:</strong> Conducted comprehensive
+                            infrastructure and performance health reviews on onboarding, identifying systemic
+                            bottlenecks and remediation priorities.</li>
+                        <li><strong>Performance Engineering:</strong> Delivered up to 150% performance improvement on
+                            PostgreSQL workloads and ~70% improvement on MySQL systems through OS-level tuning,
+                            configuration optimization, and query enhancements.</li>
+                        <li><strong>Platform Lifecycle Ownership:</strong> Owned the end-to-end lifecycle of
+                            PostgreSQL and MySQL platforms, including installation, upgrades, configuration,
+                            replication, and ongoing maintenance.</li>
+                        <li><strong>Capacity, HA & DR Strategy:</strong> Designed and implemented capacity planning,
+                            high-availability, and disaster-recovery architectures to meet enterprise reliability and
+                            compliance requirements.</li>
+                        <li><strong>Security, Backup & Compliance:</strong> Partnered with engineering and business
+                            stakeholders to define robust backup, recovery, and database security strategies aligned
+                            with healthcare compliance needs.</li>
+                        <li><strong>Cloud & Automation Enablement:</strong> Worked with AWS RDS and Aurora,
+                            automating routine database operations and integrating FDWs to improve operational
+                            consistency and efficiency.</li>
+                        <li><strong>Multi-Engine Support:</strong> Provided cross-platform database support
+                            (PostgreSQL, MySQL, SQL Server, MongoDB) to meet evolving application and business
+                            requirements.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="detailed-exp-item">
+                <div class="detailed-exp-header">
+                    <div>
+                        <div class="detailed-role">PostgreSQL DBA</div>
+                        <div class="detailed-company">Cisco (Aricent Technologies)</div>
+                    </div>
+                    <div class="detailed-meta">
+                        <div class="detailed-date">Aug 2016 – Apr 2017</div>
+                        <div class="detailed-loc">Bangalore, India</div>
+                    </div>
+                </div>
+                <div class="detailed-desc">
+                    <ul>
+                        <li><strong>Platform Operations & Reliability:</strong> Installed, configured, replicated, and
+                            maintained PostgreSQL databases supporting Cisco’s cloud-based EMaaS platform, ensuring
+                            availability and operational stability.</li>
+                        <li><strong>High Availability & DR:</strong> Implemented PostgreSQL HA/DR
+                            architectures to maintain service continuity and meet enterprise reliability expectations.
+                        </li>
+                        <li><strong>Backup, Security & Compliance:</strong> Planned and executed database backup,
+                            recovery, and security strategies aligned with Cisco enterprise standards.</li>
+                        <li><strong>Performance Engineering:</strong> Tuned PostgreSQL server parameters & configs for
+                            scalable production workloads.</li>
+                        <li><strong>Monitoring & Tooling:</strong> Implemented and managed monitoring and administration
+                            tooling including Nagios, pgBadger, pgAdmin, pgPool-II, PEM, and OPM, enabling proactive
+                            issue detection.</li>
+                        <li><strong>Proactive Health Management:</strong> Conducted regular database health checks and
+                            resolved performance and stability issues before customer impact.</li>
+                        <li><strong>Automation & Efficiency:</strong> Automated routine DBA operations using shell
+                            scripting, improving operational consistency and reducing manual effort.</li>
+                        <li><strong>Container & Ecosystem Exposure:</strong> Supported containerized environments using
+                            Docker and gained foundational exposure to MongoDB administration.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="detailed-exp-item">
+                <div class="detailed-exp-header">
+                    <div>
+                        <div class="detailed-role">Founder Director</div>
+                        <div class="detailed-company">ThoughtBirds Technologies LLP</div>
+                    </div>
+                    <div class="detailed-meta">
+                        <div class="detailed-date">Nov 2013 – Jul 2016</div>
+                        <div class="detailed-loc">Pune, India</div>
+                    </div>
+                </div>
+                <div class="detailed-desc">
+                    <ul>
+                        <li><strong>Founder Leadership & Business Ownership:</strong> Co-founded and led an IT services
+                            startup, owning the full lifecycle from client acquisition and commercial negotiations to
+                            solution architecture, delivery, and long-term support across multiple engagements.</li>
+                        <li><strong>Database Platform Engineering:</strong> Designed, deployed, and operated PostgreSQL
+                            environments end to end, including installation, configuration, performance tuning, and
+                            ongoing production operations.</li>
+                        <li><strong>Reliability, Backup & Security:</strong> Planned and implemented backup, recovery,
+                            and security strategies to ensure data integrity and service continuity.
+                        </li>
+                        <li><strong>Automation & Operational Efficiency:</strong> Automated routine operational
+                            workflows using shell scripting, reducing manual effort and improving delivery efficiency.
+                        </li>
+                        <li><strong>Change & Release Management:</strong> Coordinated upgrades, patches, and production
+                            changes with technical teams to ensure safe and predictable system evolution.</li>
+                        <li><strong>Performance Optimization:</strong> Optimized WordPress & Magento platforms through
+                            DB tuning, app config, and infrastructure improvements.</li>
+                        <li><strong>Cloud & Big Data Exposure:</strong> Built hands-on experience across AWS and
+                            big-data ecosystems (Hadoop, HDFS, Hive, HBase, Sqoop, Flume, Zookeeper), expanding
+                            architectural breadth beyond OLTP systems.</li>
+                        <li><strong>Application & Web Engineering:</strong> Led the design and development of web
+                            applications using PHP, JavaScript/jQuery, HTML/CSS, and CMS platforms (WordPress, Magento).
+                        </li>
+                        <li><strong>Agile Delivery & Execution:</strong> Implemented Scrum-based delivery to improve
+                            planning, execution, and team collaboration.</li>
+                        <li><strong>People Management & Team Building:</strong> Recruited, trained, and managed a
+                            cross-functional team of 4 engineers, developing early leadership and people-management
+                            capabilities.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 5 -->
+    <div class="page">
+        <div class="main-content-full">
+            <div class="header-main">
+                <div class="main-title">Detailed Professional Experience (Contd.)</div>
+            </div>
+
+            <div class="detailed-exp-item">
+                <div class="detailed-exp-header">
+                    <div>
+                        <div class="detailed-role">Associate Engineer</div>
+                        <div class="detailed-company">Xento Systems Pvt. Ltd</div>
+                    </div>
+                    <div class="detailed-meta">
+                        <div class="detailed-date">Oct 2012 – Oct 2013</div>
+                        <div class="detailed-loc">Pune, India</div>
+                    </div>
+                </div>
+                <div class="detailed-desc">
+                    <ul>
+                        <li><strong>Production Support & Reliability:</strong> Supported production and non-production
+                            PostgreSQL environments, resolving live database issues in close collaboration with
+                            application developers.</li>
+                        <li><strong>Environment Operations:</strong> Monitored and managed PostgreSQL databases across
+                            development and staging, ensuring availability and operational stability.</li>
+                        <li><strong>Schema & Data Management:</strong> Created and maintained database schemas, users,
+                            and objects to support evolving application requirements.</li>
+                        <li><strong>Backup & Recovery:</strong> Performed database backup and restoration activities to
+                            ensure data integrity and recoverability.</li>
+                        <li><strong>Query Performance Optimization:</strong> Optimized and tuned SQL queries, improving
+                            application performance and query efficiency.</li>
+                        <li><strong>Application Collaboration:</strong> Contributed to development of
+                            PHP/HTML/CSS/jQuery-based web applications supporting a rental business platform.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="detailed-exp-item">
+                <div class="detailed-exp-header">
+                    <div>
+                        <div class="detailed-role">Assistant System Engineer</div>
+                        <div class="detailed-company">Tata Consultancy Services</div>
+                    </div>
+                    <div class="detailed-meta">
+                        <div class="detailed-date">Jul 2007 – Feb 2010</div>
+                        <div class="detailed-loc">Chennai, India</div>
+                    </div>
+                </div>
+                <div class="detailed-desc">
+                    <ul>
+                        <li><strong>Enterprise Reporting & BI Delivery:</strong> Developed and delivered enterprise
+                            reports using Business Objects (DeskI, WebI XIR2) and Crystal Reports XIR2 for financial
+                            applications including FARS and RPS.</li>
+                        <li><strong>Batch Processing & Operations:</strong> Managed daily and periodic batch reporting
+                            workflows, ensuring successful job execution, file generation, and secure FTP delivery to
+                            business users.</li>
+                        <li><strong>Financial Reporting Operations:</strong> Delivered daily PFADAV, weekly premium, and
+                            monthly marketing allowance reports, ensuring data accuracy and timely availability for
+                            stakeholders.</li>
+                        <li><strong>Process Optimization:</strong> Improved FARS and RPS monthly reporting workflows,
+                            reducing end-to-end processing time by ~50% through operational and process enhancements.
+                        </li>
+                        <li><strong>Data Validation & Quality Control:</strong> Compiled, validated, and reconciled
+                            marketing allowance totals prior to distribution, ensuring reporting accuracy and
+                            compliance.</li>
+                        <li><strong>Production Support & SLA Management:</strong> Handled production incidents and
+                            service requests across BI tools (Business Objects, Crystal Reports, Oracle Reports, SQL),
+                            resolving issues within defined SLAs.</li>
+                        <li><strong>Monitoring & Incident Resolution:</strong> Performed daily batch monitoring,
+                            break-fix analysis, report enhancements, and regression testing to maintain reporting
+                            stability.</li>
+                        <li><strong>Tooling & Automation:</strong> Built a custom MS Access–based tracking tool to
+                            manage service requests and work requests before adoption of BMC Remedy.</li>
+                        <li><strong>Documentation & Knowledge Transfer:</strong> Documented end-to-end reporting
+                            processes for FARS and RPS systems and provided KT to new joiners on business workflows and
+                            reporting modules.</li>
+                        <li><strong>Stakeholder Collaboration:</strong> Worked closely with end users to diagnose
+                            issues, communicate resolutions, and provide regular operational updates.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
